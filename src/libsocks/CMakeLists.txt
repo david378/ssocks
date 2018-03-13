@@ -9,7 +9,6 @@ if(WIN32)
 	target_link_libraries(socks ws2_32)
 endif(WIN32)
 
-target_link_libraries(socks)
 INSTALL(
     DIRECTORY ${CMAKE_SOURCE_DIR}/src/libsocks
     DESTINATION ${PROJECT_SOURCE_DIR}/build/include

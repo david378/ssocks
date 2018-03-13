@@ -28,7 +28,7 @@ if(WIN32)
 endif(WIN32)
 
 if(UNIX)
-	set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -static -Os -s")
+	set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -static -Os -s")
 	set(nsocks_src auth-util.c configd-util.c nsocks.c config.h auth-util.h configd-util.h)
 	set(rcsocks_src auth-util.c configd-util.c rcsocks.c config.h auth-util.h configd-util.h)
 	set(rssocks_src auth-util.c configd-util.c rssocks.c config.h auth-util.h configd-util.h)
